@@ -48,5 +48,6 @@ df %>%
   labs(title = 'Vimos pelo Flamengo!',
        subtitle = paste0('Flamengo eleva ocupação média dos estádios','\n',
        '*Período com restrições de capacidade pode afetar números')) +
-  theme_minimal()
+  theme_minimal() +
+  theme(plot.background = element_rect(fill = 'white'))
 ggsave('attendance.png')
