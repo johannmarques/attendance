@@ -14,6 +14,11 @@ df <- basedosdados::read_sql("SELECT ano_campeonato, data, rodada, estadio,
                              WHERE ano_campeonato > 2017")
 ```
 
+<p align = "center">
+<img src="time_attendance.png"/>
+</p>
+
+
 ## Metrics
 
 For each club $i$, I compute non-Flamengo attendance as the average attendance 
