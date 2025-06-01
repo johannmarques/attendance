@@ -53,4 +53,6 @@ In order to control for year ($t$) and home team specific effects, as well as bo
 
 $$Attendance_{m} = \beta_{0} + \sum_{t} \beta_{t}\mathbb{1}[Year_{m}=t] + \sum_{j}\beta_{j}\mathbb{1}[Home_{m} = j] + \beta_{Fla}\mathbb{1}[Away(m) = Flamengo] + \beta_{1}(1/StandingsHome_{m}) + \beta_{2}(1/StandingsAway_{m})$$
 
-{{ include "regression_table.md" }}
+<p align = "center">
+<img src="regression_table.png"/>
+</p>
