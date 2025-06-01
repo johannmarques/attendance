@@ -240,7 +240,7 @@ mod4 <- lm(ocupacao ~ ano_campeonato + time_mandante + Flamengo +
      InvColocacaoMandante +
      InvColocacaoVisitante, data = df_reg)
 
-for(format in c("md", "html")){
+for(format in c("md", "html", 'png')){
   modelsummary(list(mod1, mod4),
                vcov = "HC1",
                coef_map = c("Flamengo", "Palmeiras", "Corinthians", 
