@@ -239,11 +239,13 @@ mod4 <- lm(ocupacao ~ ano_campeonato + time_mandante + Flamengo +
      InvColocacaoMandante +
      InvColocacaoVisitante, data = df_reg)
 
-modelsummary(list(mod1, mod4),
-             vcov = "HC1",
-             coef_map = c("Flamengo", "Palmeiras", "Corinthians", 
-                          "InvColocacaoMandante", "InvColocacaoVisitante"),
-             stars = c('*' = 0.1, '**' = 0.05, '***' = 0.01),
-             output = "regression_table.html",
-             title = "Regression Results",
-             notes = "Heteroskedasticity-robust standard errors in parentheses")
+for(format in c("md", "html")){
+  modelsummary(list(mod1, mod4),
+               vcov = "HC1",
+               coef_map = c("Flamengo", "Palmeiras", "Corinthians", 
+                            "InvColocacaoMandante", "InvColocacaoVisitante"),
+               stars = c('*' = 0.1, '**' = 0.05, '***' = 0.01),
+               output = paste0("regression_table.", format),
+               title = "Regression Results",
+               notes = "Heteroskedasticity-robust standard errors in parentheses")
+}
