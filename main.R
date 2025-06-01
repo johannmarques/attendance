@@ -244,6 +244,6 @@ modelsummary(list(mod1, mod4),
              coef_map = c("Flamengo", "Palmeiras", "Corinthians", 
                           "InvColocacaoMandante", "InvColocacaoVisitante"),
              stars = c('*' = 0.1, '**' = 0.05, '***' = 0.01),
-             output = "html",
+             output = "regression_table.html",
              title = "Regression Results",
              notes = "Heteroskedasticity-robust standard errors in parentheses")
