@@ -151,6 +151,7 @@ df_clean %>%
   scale_color_manual(values = c("Flamengo" = "#c3281e", "Outros" = "Black")) +
   my_theme +
   theme(legend.position = c(0.95, 0.2))
+ggsave('time_attendance.png')
 
 # Breaks for fill scale
 my_breaks <- c(.5, 1, 1.5, 2, 3, 3.5)
